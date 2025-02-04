@@ -19,7 +19,6 @@
 # if dinner == "tacos" || dinner == "pizza"
 # if dinner == "tacos" && dessert == "ice cream"
 
-# 1. set the first die and write it to the screen
 die1 = rand(1..6)
 puts die1
 
@@ -30,3 +29,12 @@ puts die2
 # 3. create a variable for the total and write it to the screen
 total = die1 + die2
 puts "The total is: #{total}"
+
+# 4. check if total is equal to 7 or 11
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+else 
+    puts "THE POINT IS #{total}"
+end
